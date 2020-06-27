@@ -10,7 +10,7 @@ Cuento, en resumen, quien soy, informacion personal y cuales son los servicios e
 capacitado
   ```
   
-  ![Sobre mi](curriculum-vitae/readmeimages/Sobremí.png)
+  ![Sobre mi](readmeimages/Sobremí.png)
   
   <li>Curriculum</li>
   

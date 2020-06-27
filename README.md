@@ -19,7 +19,7 @@ Muestro mi con un resumen de mi biografia, mis diferentes skills y mi formacion 
 asi como mi experiencia laboral
   ```
   
-  ![Curriculum](curriculum-vitae/readmeimages/Curriculum.png)
+  ![Curriculum](readmeimages/Curriculum.png)
   
   <li>Otros</li>  
   
@@ -27,7 +27,7 @@ asi como mi experiencia laboral
 En este seccion se muestran otros gustos e intereses que tengo
   ```
   
-  ![Otros](curriculum-vitae/readmeimages/Otros.png)
+  ![Otros](readmeimages/Otros.png)
   
   <li>Contactame</li>
   
@@ -35,7 +35,10 @@ En este seccion se muestran otros gustos e intereses que tengo
 Mis distintas redes y maneras de contectarme
   ```
   
-  ![Contactame](curriculum-vitae/readmeimages/Contactame.png)
+  ![Contactame](readmeimages/Contactame.png)
   
 </ol>
   
+  Cada pantalla fue creada utilizando **Figma**
+  
+  [Link del prototipado en Figma](https://www.figma.com/file/ROSbFT5TTUjm9kruMjQqzP/Curriculum?node-id=0%3A1)

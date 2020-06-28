@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: red;
+}
+
+nav{
+    height: 70px;
+    width: 100%;
+    background-color: aquamarine;
+}
+
+nav div{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    max-width: 1280px;
+    margin: auto;
+    display: flex;
+}
+
+.tool{
+    height: 100%;
+    display: inline-block;
+}
+
+#name{
+    font-family: 'Lora',serif;
+}
+
+#name{
+    font-size: 64px;
+    height: 122px;
+    background-color: wheat;
+    max-width: 1280px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: flex-end;
+}
+
+#name span{
+    display: inline-block;
+    background-color: violet;
+}
+
+section{
+    margin: auto;
+    max-width: 1280px;
+    width: 100%;
+    background-color: tomato;
+    justify-content: space-between;
+    height: auto;
+    display: flex;
+    margin-top: 48px;
+    margin-bottom: 104px;
+}
+
+#info{
+    height: 775px;
+    min-width: 320px;
+    background-color: yellow;
+}
+
+#changesection{
+    width: 876px;
+    height: 2065px;
+    background-color: turquoise;
+    border-radius: 16px;
+}
+
+footer{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    height: 50px;
+    width: 100%;
+    background-color: thistle;
+}
+
+picture{
+    display: none;
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 1110px){
+    body{
+        background-color: teal;
+    }
+    
+    section{
+        max-width: 1140px;
+    }
+
+    #changesection{
+        width: 730px;
+    }
+}
+
+@media only screen and (max-width: 1110px) and (min-width: 1000px){
+    body{
+        background-color: yellowgreen;
+    }
+
+    section{
+        max-width: 1025px;
+    }
+
+    #changesection{
+        width: 643px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #name{
+        justify-content: center;
+        font-size: 48px;
+        text-align: center;
+    }
+
+    section{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #info{
+        max-width: 320px;
+        margin-bottom: 60px;
+    }
+
+    #changesection{
+        width: 95%;
+    }
+
+    nav div{
+        display: none;
+    }
+
+    picture img{
+        width: 100%;
+        height: 100%;
+    }
+
+    picture{
+        display: inline-block;
+        width: 70px;
+        height: 70px;
+    }
+}

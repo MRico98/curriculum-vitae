@@ -4,27 +4,38 @@
 }
 
 body{
-    background-color: red;
+    background-color: #F5F5F5;
 }
 
 nav{
     height: 70px;
     width: 100%;
-    background-color: aquamarine;
+    background-color: white;
 }
 
 nav div{
     height: 100%;
     width: 100%;
-    background-color: black;
     max-width: 1280px;
     margin: auto;
     display: flex;
 }
 
 .tool{
+    cursor: pointer;
     height: 100%;
     display: inline-block;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+}
+
+.tool:hover{
+    fill: white;
+    background-color: #346ABB;
+    color:white;
 }
 
 .lora{
@@ -50,7 +61,6 @@ nav div{
 #name{
     font-size: 64px;
     height: 122px;
-    background-color: wheat;
     max-width: 1280px;
     width: 100%;
     margin: auto;
@@ -60,14 +70,12 @@ nav div{
 
 #name span{
     display: inline-block;
-    background-color: violet;
 }
 
 section{
     margin: auto;
     max-width: 1280px;
     width: 100%;
-    background-color: tomato;
     justify-content: space-between;
     height: auto;
     display: flex;
@@ -78,13 +86,16 @@ section{
 #info{
     height: 775px;
     min-width: 320px;
-    background-color: yellow;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
 }
 
 #changesection{
     width: 876px;
     height: 2065px;
-    background-color: turquoise;
+    border-radius: 16px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
     border-radius: 16px;
 }
 
@@ -94,7 +105,12 @@ footer{
     left: 0;
     height: 50px;
     width: 100%;
-    background-color: thistle;
+    background-color: #2D2D2D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6A6A6A;
+    font-size: 16px;
 }
 
 #hamburguer{
@@ -115,19 +131,15 @@ picture img{
 picture + div{
     height: 434px;
     width: 100%;
-    background-color: teal;
     display: flex;
 }
 
 #clave{
     height: 100%;
     width: 50%;
-    background-color: blue;
-
 }
 
 #valor{
-    background-color: darkgreen;
     width: 50%;
     height: 100%;
 }
@@ -138,7 +150,6 @@ picture + div{
 
 #nombre,#edad,#locacion,#telefono,#niveldeingles,#nombrevalor,#edadvalor,#locacionvalor,#telefonovalor,#niveldeinglesvalor{
     height: 39px;
-    background-color: pink;
     width: 147px;
     display: flex;
     align-items: flex-end;
@@ -147,7 +158,6 @@ picture + div{
 #titulo,#titulovalor{
     width: 147px;
     height: 60px;
-    background-color: darkmagenta;
     display:flex;
     align-items: center;
 }
@@ -155,32 +165,52 @@ picture + div{
 #almamater,#trabajoactual,#almamatervalor,#trabajoactualvalor{
     width: 147px;
     height: 82px;
-    background-color: blueviolet;
     display:flex;
     align-items: center;
 }
 
 #pdfdownload{
-    background-color: darkred;
-    display: block;
     height: 75px;
-    width: 100%;
-    display: flex
+    display: flex;
 }
 
-#pdfdownload div{
+#pdfdownload button{
     height: 43px;
     width: 288px;
-    background-color: burlywood;
-    align-self: center;
+    background-color: #E9E9E9;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     margin: auto;
+    border-radius: 8px;
+    box-shadow: 0px 0px 0px transparent;
+    border: 0px solid transparent;
+    text-shadow: 0px 0px 0px transparent;
+    color: #346ABB;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.navicon{
+    display: inline-block;
+    height: 29px;
+    width: 24.67px;
+    margin-right: 8px;
+}
+
+.selecttool{
+    color: white;
+    background-color: #346ABB;
+    fill: white;
+}
+
+#pdfimage{
+    width: 18px;
+    height: 22px;
 }
 
 @media only screen and (max-width: 1280px) and (min-width: 1110px){
-    body{
-        background-color: teal;
-    }
-    
+
     section{
         max-width: 1140px;
     }
@@ -191,9 +221,6 @@ picture + div{
 }
 
 @media only screen and (max-width: 1110px) and (min-width: 1000px){
-    body{
-        background-color: yellowgreen;
-    }
 
     section{
         max-width: 1025px;
@@ -201,6 +228,22 @@ picture + div{
 
     #changesection{
         width: 643px;
+    }
+}
+
+@media only screen and (max-width: 740px){
+    nav div{
+        display: none;
+    }
+
+    nav{
+        height: 40px;
+    }
+
+    #hamburguer{
+        display: inline-block;
+        width: 40px;
+        height: 40px;
     }
 }
 
@@ -223,15 +266,5 @@ picture + div{
 
     #changesection{
         width: 95%;
-    }
-
-    nav div{
-        display: none;
-    }
-
-    #hamburguer{
-        display: inline-block;
-        width: 70px;
-        height: 70px;
     }
 }

@@ -1,7 +1,9 @@
 var elementselected = 0;
 var burguergrades = 0;
+var paginas = ["<p>Sobre Mi</p>","<p>Curriculum</p>","<p>otros</p>","<p>Contactame</p>"];
 
 $(document).ready(function(){
+    setDisplayElement(document.getElementById("auxiliar"),"block");
     setActionNavigatorButton($(".tool"));
     setActionNavigatorButton($(".hamburguertool"));
     document.getElementById("hamburguer").onclick = function(){
@@ -16,6 +18,13 @@ $(document).ready(function(){
 });
 
 /*
+    Funcion para asignar un display especifico a un elemento parametrizado
+*/
+function setDisplayElement(element,display){
+    element.style.display = display;
+}
+
+/*
     Funcion para cargar las acciones de cambio en los botones del navegador
 */
 function setActionNavigatorButton(toolbarelements){
@@ -26,6 +35,11 @@ function setActionNavigatorButton(toolbarelements){
             elementselected = this.id.charAt(0);
             $(".tool")[elementselected].classList.add("selecttool");
             $(".hamburguertool")[elementselected].classList.add("selecttool");
+            $("#auxiliar").fadeOut(250,function(){
+                $("#auxiliar").empty();
+                $("#auxiliar").append("<p>" + paginas[elementselected] + "</p>");
+                $("#auxiliar").fadeIn(250);
+            });
         }
     });
 }
@@ -39,6 +53,9 @@ function forEach(object,callback){
     }
 }
 
+/*
+    Funcion para realizar modificar el display del menu hamburguesa
+*/
 function menuHamburguerSection(){
     var menubar = document.querySelector("nav + div");
     if(menubar.style.display == "block"){
@@ -48,6 +65,9 @@ function menuHamburguerSection(){
     menubar.style.display = "block";
 }
 
+/*
+    Funcion para la rotacion del hambuguer menu
+*/
 function menuHamburguerRotation(){
     burguergrades = burguergrades + 90;
     document.getElementById("hamburguer").style.transform = "rotate(" + burguergrades + "deg)";

@@ -115,6 +115,7 @@ footer{
 
 #hamburguer{
     display: none;
+    animation: spin 4s linear infinite;
 }
 
 picture img{

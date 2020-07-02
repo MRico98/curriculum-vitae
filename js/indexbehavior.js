@@ -1,23 +1,18 @@
-var elementselected;
-var burgerelementselected;
+var elementselected = 0;
+var burguergrades = 0;
 
 $(document).ready(function(){
-    elementselected = 0;
     setActionNavigatorButton($(".tool"));
     setActionNavigatorButton($(".hamburguertool"));
     document.getElementById("hamburguer").onclick = function(){
-        var menubar = document.querySelector("nav + div");
-        if(menubar.style.display == "block"){
-            menubar.style.display = "none";
-            return;
-        }
-        menubar.style.display = "block";
+        menuHamburguerSection();
+        menuHamburguerRotation();
     }
-
     window.addEventListener("resize",function(){
         document.querySelector("nav + div").style.display = "none";
+        document.getElementById("hamburguer").style.transform = 'rotate(0deg)'
+        burguergrades = 0;
     });
-
 });
 
 /*
@@ -42,4 +37,18 @@ function forEach(object,callback){
     for(var counter=0;counter<object.length;counter++){
         callback(object[counter]);
     }
+}
+
+function menuHamburguerSection(){
+    var menubar = document.querySelector("nav + div");
+    if(menubar.style.display == "block"){
+        menubar.style.display = "none";
+        return;
+    }
+    menubar.style.display = "block";
+}
+
+function menuHamburguerRotation(){
+    burguergrades = burguergrades + 90;
+    document.getElementById("hamburguer").style.transform = "rotate(" + burguergrades + "deg)";
 }

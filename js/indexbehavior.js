@@ -3,7 +3,7 @@ var burguergrades = 0;
 var paginas = ["<p>Sobre Mi</p>","<p>Curriculum</p>","<p>otros</p>","<p>Contactame</p>"];
 
 $(document).ready(function(){
-    setDisplayElement(document.getElementById("auxiliar"),"block");
+    //setDisplayElement(document.getElementById("auxiliar"),"block");
     setActionNavigatorButton($(".tool"));
     setActionNavigatorButton($(".hamburguertool"));
     document.getElementById("hamburguer").onclick = function(){

@@ -1,0 +1,51 @@
+.titulossection{
+    height: 73px;
+    background-color: red;
+}
+
+#changesection .titulossection:first-child{
+    border-radius: 16px 16px 0px 0px;   
+}
+
+.titulossection + div{
+    margin: 24px 0px 40px 0px;
+    background-color: rosybrown;
+    display: flex;
+    justify-content: center;
+}
+
+#seccionservicios{
+    width: 100%;
+    height: auto;
+    background-color: seagreen;
+    max-width: 700px;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.service{
+    width: 184px;
+    background-color: black;
+    display: block;
+    height: 30px;
+    margin-bottom: 24px;
+}
+
+@media only screen and (max-width: 1110px) and (min-width:644px){
+    #seccionservicios{
+        max-width: 596px;
+    }
+}
+
+@media only screen and (max-width: 643px){
+    .service{
+        width: 175px;
+        margin: 24px 0 24px 0;
+    }
+
+    #seccionservicios{
+        height: auto;
+        max-width: 175px;
+    }
+}

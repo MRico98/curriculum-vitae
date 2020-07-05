@@ -1,15 +1,37 @@
 .titulossection{
-    height: 73px;
-    background-color: red;
+    min-height: 73px;
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+    border-bottom: 2px solid #C5C5C5;
 }
 
 #changesection .titulossection:first-child{
     border-radius: 16px 16px 0px 0px;   
 }
 
+.infocolumn{
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.aboutmeinfo{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titulossection span{
+    padding-left: 16px;
+}
+
 .titulossection + div{
     margin: 24px 0px 40px 0px;
-    background-color: rosybrown;
     display: flex;
     justify-content: center;
 }
@@ -17,35 +39,106 @@
 #seccionservicios{
     width: 100%;
     height: auto;
-    background-color: seagreen;
     max-width: 700px;
     justify-content: space-between;
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-start;
 }
 
 .service{
     width: 184px;
-    background-color: black;
-    display: block;
-    height: 30px;
     margin-bottom: 24px;
+    text-align: center;
+    height: auto;
+    display: block;
+}
+
+.aboutmeinfo span:nth-child(1){
+    height: 55px;
+    width: 50%;
+    display: inline-block;
+    font-size: 24px;
+    margin-left: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.service picture{
+    width: 151px;
+    height: 151px;
+    display: block;
+    margin: auto;
+}
+
+.aboutmeinfo span:nth-child(2){
+    display: inline-block;
+    width: 175px;
+    font-size: 16px;
+}
+
+#bio{
+    display: block;
+    padding: 0px 16px 0px 16px;
+}
+
+.titulossection + div p{
+    text-align: justify;
+    max-width: 844px;
+    font-size: 16px;
+}
+
+.titulossection + div p:nth-child(1),.titulossection + div p:nth-child(2),.titulossection + div p:nth-child(3){
+    margin-bottom: 24px;
+}
+
+.service span{
+    display: block;
+    font-size: 24px;
+    margin: 16px 0px 16px 0px;
+}
+
+.service p{
+    text-align: center !important;
+    word-spacing: normal;
+    letter-spacing: -1px;
+}
+
+@media only screen and (max-width:1280px){
+    .aboutmeinfo span:nth-child(1){
+        font-size: 16px;
+    }
 }
 
 @media only screen and (max-width: 1110px) and (min-width:644px){
     #seccionservicios{
         max-width: 596px;
-    }
+    } 
 }
 
 @media only screen and (max-width: 643px){
     .service{
         width: 175px;
-        margin: 24px 0 24px 0;
+        margin: 8px 0 8px 0;
     }
 
     #seccionservicios{
         height: auto;
         max-width: 175px;
+    }
+
+    .infocolumn{
+        display: flex;
+        width: 300px;
+        margin: auto;
+    }
+
+    .titulossection:first-child + div{
+        display: block; 
+    }
+
+    .aboutmeinfo span:nth-child(1){
+        margin-left: 8px;
+        width: 40%;
     }
 }

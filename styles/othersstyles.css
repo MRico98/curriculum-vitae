@@ -4,10 +4,6 @@
     text-align: center;
 }
 
-.centersection div{
-    display: inline-block;
-}
-
 .centersection:nth-child(2) div:nth-child(1){
     width: 179px;
     height: 345px;
@@ -30,6 +26,7 @@
 
 .centersection div picture{
     display: block;
+    
 }
 
 .centersection div h4{

@@ -1,9 +1,10 @@
 var elementselected = 0;
 var burguergrades = 0;
-var paginas = ["<p>Sobre Mi</p>","<p>Curriculum</p>","<p>otros</p>","<p>Contactame</p>"];
+var others = '<div class="titulossection bold lora"><span>LIBROS FAVORITOS</span></div><div class="opensans centersection"><div><picture><img src="images/TomSawyer_image.jpg" alt="tom sawyer"></picture><h4 class="semibold">Las aventuras de Tom Sawyer</h4><h5 class="regular">Mark Twain</h5></div><div><picture><img src="images/IDS_image.jpg" alt="tom sawyer"></picture><h4 class="semibold">Ingenieria del software: Un enfoque practico</h4><h5 class="regular">Roger Pressman</h5></div><div><picture><img src="images/RELG_image.jpg" alt="tom sawyer"></picture><h4 class="semibold">Rebelion en la granja</h4><h5 class="regular">George Orwell</h5></div></div><div class="titulossection bold lora"><span>OTROS INTERESES</span></div><div class="opensans centersection"><div><picture><img src="images/Dog_icon.png" alt="dog"></picture></div><div><picture><img src="images/Ball_icon.png" alt="dog"></picture></div><div><picture><img src="images/Pizza_icon.png" alt="dog"></picture></div></div>';
+var paginas = ["<p>Sobre Mi</p>","<p>Curriculum</p>",others,"<p>Contactame</p>"];
 
 $(document).ready(function(){
-    setDisplayElement(document.getElementById("auxiliar"),"block");
+    setDisplayElement(document.getElementById("changesection"),"block");
     setActionNavigatorButton($(".tool"));
     setActionNavigatorButton($(".hamburguertool"));
     document.getElementById("hamburguer").onclick = function(){
@@ -35,10 +36,10 @@ function setActionNavigatorButton(toolbarelements){
             elementselected = this.id.charAt(0);
             $(".tool")[elementselected].classList.add("selecttool");
             $(".hamburguertool")[elementselected].classList.add("selecttool");
-            $("#auxiliar").fadeOut(250,function(){
-                $("#auxiliar").empty();
-                $("#auxiliar").append("<p>" + paginas[elementselected] + "</p>");
-                $("#auxiliar").fadeIn(250);
+            $("#changesection").fadeOut(250,function(){
+                $("#changesection").empty();
+                $("#changesection").append(paginas[elementselected]);
+                $("#changesection").fadeIn(250);
             });
         }
     });

@@ -1,31 +1,39 @@
 .centersection{
     justify-content: space-evenly;
     width: 100%;
-    background-color: gold;
+    text-align: center;
+}
+
+.centersection div{
+    display: inline-block;
 }
 
 .centersection:nth-child(2) div:nth-child(1){
-    width: 174px;
+    width: 179px;
     height: 345px;
-    background-color: darkmagenta;
 }
 
 .centersection:nth-child(2) div:nth-child(2){
     width: 201px;
     height: 378px;
-    background-color: green;
 }
 
 .centersection:nth-child(2) div:nth-child(3){
     width: 167px;
     height: 349px;
-    background-color: firebrick;
 }
 
 .centersection:nth-child(4) div:nth-child(1),.centersection:nth-child(4) div:nth-child(2),.centersection:nth-child(4) div:nth-child(3){
     width: 180px;
     height: 180px;
-    background-color: darkmagenta;
+}
+
+.centersection div picture{
+    display: block;
+}
+
+.centersection div h4{
+    font-size: 24px;
 }
 
 @media only screen and (max-width: 600px){

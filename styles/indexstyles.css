@@ -251,7 +251,7 @@ nav + div {
 .titulossection + div{
     margin: 24px 0px 40px 0px;
     display: flex;
-    justify-content: center;
+    
 }
 
 @media only screen and (max-width: 1280px) and (min-width: 1110px){

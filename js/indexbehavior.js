@@ -4,6 +4,7 @@ var aboutme = '<div class="titulossection bold lora"><span>SOBRE MÍ</span></div
 var paginas = [aboutme,"<p>Curriculum</p>","<p>otros</p>","<p>Contactame</p>"];
 
 $(document).ready(function(){
+    setDisplayElement(document.getElementById("infosection"),"block");
     setActionNavigatorButton($(".tool"));
     setActionNavigatorButton($(".hamburguertool"));
     document.getElementById("hamburguer").onclick = function(){
@@ -35,10 +36,10 @@ function setActionNavigatorButton(toolbarelements){
             elementselected = this.id.charAt(0);
             $(".tool")[elementselected].classList.add("selecttool");
             $(".hamburguertool")[elementselected].classList.add("selecttool");
-            $("#changesection").fadeOut(250,function(){
-                $("#changesection").empty();
-                $("#changesection").append(paginas[elementselected]);
-                $("#changesection").fadeIn(250);
+            $("#infosection").fadeOut(250,function(){
+                $("#infosection").empty();
+                $("#infosection").append(paginas[elementselected]);
+                $("#infosection").fadeIn(250);
             });
         }
     });

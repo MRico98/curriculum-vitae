@@ -1,9 +1,10 @@
 var elementselected = 0;
 var burguergrades = 0;
-var paginas = ["<p>Sobre Mi</p>","<p>Curriculum</p>","<p>otros</p>","<p>Contactame</p>"];
+var contactme = '<div class="titulossection bold lora"><span>CONTACTÁME</span></div><div id="iconssection" class="opensans"><div><a href="https://www.instagram.com/ric.x/" target="_blank"><div><picture><img src="images/Instagram_icon.png" alt="instagram"></picture><h4 class="regular">ric.x</h4></div></a><div><picture><img src="images/Whatsapp_icon.png" alt="whatsapp"></picture><h4 class="regular">+52 1 999 352 2430</h4></div><a href="https://www.linkedin.com/in/manuelmartinrico/" target="_blank"><div><picture><img src="images/Linkedin_icon.png" alt="linkedin"></picture><h4 class="regular">Manuel Rico</h4></div></a></div><div><a href="mailto:ManuelRico98@outlook.es" target="_blank"><div><picture><img src="images/Outlook_icon.png" alt="instagram"></picture><h4 class="regular">ManuelRico98@outlook.es</h4></div></a><a href="mailto:manuelmartinrico1998@gmail.com" target="_blank"><div><picture><img src="images/gmail_icon.png" alt="instagram"></picture><h4 class="regular">manuelmartinrico1998@gmail.com</h4></div></a></div><div><a href="https://github.com/MRico98" target="_blank"><div><picture><img src="images/Github_icon.png" alt="instagram"></picture><h4 class="regular">MRico98</h4></div></a></div></div>';
+var paginas = ["<p>Sobre Mi</p>","<p>Curriculum</p>","<p>contactme</p>",contactme];
 
 $(document).ready(function(){
-    setDisplayElement(document.getElementById("auxiliar"),"block");
+    setDisplayElement(document.getElementById("changesection"),"block");
     setActionNavigatorButton($(".tool"));
     setActionNavigatorButton($(".hamburguertool"));
     document.getElementById("hamburguer").onclick = function(){
@@ -35,10 +36,10 @@ function setActionNavigatorButton(toolbarelements){
             elementselected = this.id.charAt(0);
             $(".tool")[elementselected].classList.add("selecttool");
             $(".hamburguertool")[elementselected].classList.add("selecttool");
-            $("#auxiliar").fadeOut(250,function(){
-                $("#auxiliar").empty();
-                $("#auxiliar").append("<p>" + paginas[elementselected] + "</p>");
-                $("#auxiliar").fadeIn(250);
+            $("#changesection").fadeOut(250,function(){
+                $("#changesection").empty();
+                $("#changesection").append(paginas[elementselected]);
+                $("#changesection").fadeIn(250);
             });
         }
     });

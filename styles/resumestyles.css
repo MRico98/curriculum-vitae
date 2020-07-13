@@ -1,0 +1,148 @@
+#bioyskills{
+    display: block;
+    padding: 0px 16px 0px 16px;
+}
+
+#bioyskills p:nth-child(1),#bioyskills p:nth-child(2){
+    margin-bottom: 24px;
+}
+
+.hardskills{
+    display: block;
+    width: 100%;
+    margin-left: 16px;
+}
+
+.hardskillsection{
+    margin-bottom: 24px;
+}
+
+.hardskills div span:first-child{
+    display: block;
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.hardskillsection div{
+    display: block;
+    
+}
+
+.hardskillsection div div{
+    display: block;
+    margin-bottom: 8px;
+}
+
+.hardskillsection div div h5{
+    display: inline-block;
+    font-size: 16px;
+}
+
+#softskills{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.softskillscolumn:nth-child(2){
+    margin: 0 32px 0 32px;
+}
+
+.experiencesection{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    margin-bottom: 32px;
+}
+
+.leftsite{
+    display: block;
+    height: 242px;
+    min-width: 193px;
+    margin-left: 16px;
+}
+
+.rightside{
+    display: inline-block;
+    max-width: 603px;
+    width: 100%;
+    margin-left: 32px;
+    margin-right: 16px;
+}
+
+#blockexperiencesection,#education{
+    display: block;
+}
+
+.leftsite span{
+    display: block;
+}
+
+.leftsite span:first-child{
+    font-size: 24px;
+}
+
+#blockexperiencesection .experiencesection:nth-child(1) picture{
+    display: block;
+    width: 193px;
+    height: 57px;
+    margin-top: 16px;
+}
+
+#education .experiencesection:nth-child(1) picture,#education .experiencesection:nth-child(2) picture{
+    display: block;
+    height: 193px;
+    width: 193px;
+}
+
+.experiencesection:nth-child(5) .leftsite picture{
+    display: block;
+    width: 193px;
+    height: 193px;
+}
+
+.rightside h5{
+    font-size: 16px;
+}
+
+.rightside h5:nth-child(2){
+    margin-top: 16px;
+}
+
+.rightside p:nth-child(2){
+    margin-top: 16px;
+}
+
+.rightside p:nth-child(3),.rightside p:nth-child(4){
+    margin-top: 8px;
+}
+
+.rightside ul{
+    text-align: justify;
+}
+
+@media only screen and (max-width: 480px){
+    #softskills{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .softskillscolumn{
+        width: 160px;
+    }
+
+    .softskillscolumn:nth-child(2){
+        margin: 0;
+    }
+
+    .experiencesection{
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .rightside{
+        margin: 0;
+        width: 85%;
+    }
+    
+}

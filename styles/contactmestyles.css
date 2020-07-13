@@ -1,59 +1,51 @@
 #iconssection div{
-    background-color: darkmagenta;
     width: 100%;
     display: flex;
     justify-content: space-around;
+    margin-bottom: 32px;
 }
 
-#iconssection div:nth-child(1) div:nth-child(1){
-    display: inline-block;
+#iconssection div div{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: auto;
+    height: auto;
+}
+
+#iconssection div div picture{
+    display: block;
     width: 120px;
-    height: 177px;
-    background-color: gold;
+    height: 120px;
+    margin-bottom: 32px;
 }
 
-#iconssection div:nth-child(1) div:nth-child(2){
-    display: inline-block;
-    width: 212px;
-    height: 177px;
-    background-color: green;
+#iconssection div div h4{
+    display: inline;
+    font-size: 24px;
+    color: black;
 }
 
-#iconssection div:nth-child(1) div:nth-child(3){
-    display: inline-block;
-    width: 134px;
-    height: 177px;
-    background-color: darkcyan;
-}
-
-#iconssection div:nth-child(2) div:nth-child(1){
-    display: inline-block;
-    width: 299px;
-    height: 177px;
-    background-color: darkolivegreen;
-}
-
-#iconssection div:nth-child(2) div:nth-child(2){
-    display: inline-block;
-    width: 340px;
-    height: 177px;
-    background-color: rgb(128, 110, 207);
-}
-
-#iconssection div:nth-child(3) div{
-    display: inline-block;
-    width: 120px;
-    height: 177px;
-    background-color: darkorange;
+@media only screen and (max-width: 1110px) and (min-width: 1000px),(max-width:600px){
+    #iconssection div div h4{
+        font-size: 16px;
+    }
 }
 
 @media only screen and (max-width: 730px){
     #iconssection div{
         flex-direction: column;
         align-items: center;
+        margin: 0;
     }
 
     #iconssection div div{
         margin: 16px 0 16px 0;
+    }
+
+    
+    #iconssection div div picture{
+        margin-bottom: 8px;
     }
 }

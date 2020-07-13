@@ -3,7 +3,7 @@ var burguergrades = 0;
 var paginas = ["<p>Sobre Mi</p>","<p>Curriculum</p>","<p>otros</p>","<p>Contactame</p>"];
 
 $(document).ready(function(){
-    setDisplayElement(document.getElementById("auxiliar"),"block");
+    setDisplayElement(document.getElementById("infosection"),"block");
     setActionNavigatorButton($(".tool"));
     setActionNavigatorButton($(".hamburguertool"));
     document.getElementById("hamburguer").onclick = function(){
@@ -35,10 +35,10 @@ function setActionNavigatorButton(toolbarelements){
             elementselected = this.id.charAt(0);
             $(".tool")[elementselected].classList.add("selecttool");
             $(".hamburguertool")[elementselected].classList.add("selecttool");
-            $("#auxiliar").fadeOut(250,function(){
-                $("#auxiliar").empty();
-                $("#auxiliar").append("<p>" + paginas[elementselected] + "</p>");
-                $("#auxiliar").fadeIn(250);
+            $("#infosection").fadeOut(250,function(){
+                $("#infosection").empty();
+                $("#infosection").append(paginas[elementselected]);
+                $("#infosection").fadeIn(250);
             });
         }
     });

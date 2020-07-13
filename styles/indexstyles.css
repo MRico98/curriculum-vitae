@@ -38,12 +38,20 @@ nav div{
     color:white;
 }
 
+.italic{
+    font-style: italic;
+}
+
 .lora{
     font-family: 'Lora',serif;
 }
 
 .opensans{
     font-family: 'Open Sans',sans-serif;
+}
+
+.light{
+    font-weight: 100px;
 }
 
 .bold{
@@ -250,6 +258,14 @@ nav + div {
 
 .titulossection + div{
     margin: 24px 0px 40px 0px;
+    display: flex;
+    
+}
+
+.titulossection + div p{
+    text-align: justify;
+    max-width: 844px;
+    font-size: 16px;
 }
 
 @media only screen and (max-width: 1280px) and (min-width: 1110px){

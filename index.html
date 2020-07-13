@@ -4,10 +4,14 @@
         <title>Cv online</title>
         <link href="styles/indexstyles.css" rel="stylesheet">
         <link href="styles/contactmestyles.css" rel="stylesheet">
+        <link href="styles/othersstyles.css" rel="stylesheet">
+        <link href="styles/resumestyles.css" rel="stylesheet">
+        <link href="styles/aboutmestyles.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet"> 
         <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>  
         <script src="js/indexbehavior.js"></script>
+        <script src="js/htmlpagesbodies.js"></script>
     </head>
     <body>
         <nav>
@@ -158,7 +162,130 @@
                 </div>
             </div>
             <div id="changesection">
-                
+               <div id="infosection">
+                <div class="titulossection bold lora">
+                    <span>SOBRE MÍ</span>
+                </div>
+                <div  class="opensans">
+                    <div class="infocolumn">
+                        <div class="aboutmeinfo"> 
+                            <span class="semibold">NOMBRE</span>
+                            <span>Manuel Martin Rico</span>
+                        </div>
+                        <div class="aboutmeinfo">
+                            <span class="semibold">LOCACION</span>
+                            <span>Mérida, Yucatán</span>
+                        </div>
+                        <div class="aboutmeinfo">
+                            <span class="semibold">ALMA MATER</span>
+                            <span>Facultad de matematicas - UADY</span>
+                        </div>
+                        <div class="aboutmeinfo">
+                            <span class="semibold">TRABAJO ACTUAL</span>
+                            <span>desarrollador de software en walook</span>
+                        </div>
+                    </div>
+                    <div class="infocolumn">
+                        <div class="aboutmeinfo"> 
+                            <span class="semibold">EDAD</span>
+                            <span>21 años</span>
+                        </div>
+                        <div class="aboutmeinfo">
+                            <span class="semibold">TITULO</span>
+                            <span>Ingeniero de software (60%)</span>
+                        </div> 
+                        <div class="aboutmeinfo">
+                            <span class="semibold">TELEFONO</span>
+                            <span>9993522430</span>
+                        </div>
+                        <div class="aboutmeinfo">
+                            <span class="semibold">NIVEL DE INGLES</span>
+                            <span>B1</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="titulossection bold lora">
+                    <span>ESTUDIANTE DE INGENIERIA DE SOFTWARE</span>
+                </div>
+                <div id="bio" class="opensans">
+                    <p>Estudiante de ingenieria de software con 21 años de edad, actualmente recido en merida,
+                        Yucatan. Trabajo desde hace un año (Jun 2019) a medio tiempo en Walook Mexico, 
+                        como desarrollador de software. </p>
+                    <p>Mi enfoque profesional es el desarrollo de software a plenitud; formalizar y estandarisar
+                         cada etapa del proceso de desarrollo y entregar un producto que mejore la calidad de 
+                         vida del usuario. Continuamente busco mejorar mi trabajo y mi desempeño como desarrollador, 
+                         me mantengo a la vanguardia en cuanto a las tecnologias mas solicitadas en el mercado y 
+                         busco un balance entre mi vida laboral y mi vida persona.</p>
+                    <p>Me gusta mucho aprender, me emociona la idea de saber un nuevo lenguaje, paradigma, 
+                        metodologia o lo que sea necesario. Tambien me considero competitivo, pero de una
+                         manera sana y profesional. Trabajo bien en equipo, me gusta aportar en la cooperacion y la 
+                         organizacion</p>
+                    <p>Tambien me gusta la pizza y el futbol</p>
+                </div>
+                <div class="titulossection bold lora">
+                    <span>SERVICIOS</span>
+                </div>
+                <div class="opensans">
+                    <div id="seccionservicios">
+                        <div class="service">
+                            <picture>
+                                <img src="images/aboutmeimages/Backend_icon.png">
+                            </picture>
+                            <span class="semibold">Back-End</span>
+                            <p>He desarrollador back-end utilizando PHP nativo 
+                                y en los frameworks Laravel y Yii</p>
+                        </div>
+                        <div class="service">
+                            <picture>
+                                <img src="images/aboutmeimages/Frontend_icon.png">
+                            </picture>
+                            <span class="semibold">Front-End</span>
+                            <p>He diseñado front-end con herramientas de HTML5 
+                                (Javascript, CSS y HTML), tambien he manejado 
+                                librerias como jQuery y Bootstrap</p>
+                        </div>
+                        <div class="service">
+                            <picture>
+                                <img src="images/aboutmeimages/Cleancode_icon.png">
+                            </picture>
+                            <span class="semibold">Clean code</span>
+                            <p>Para la calidad del codigo utilizo metodos de Code 
+                                Refactoring y baso mis estandares en libros como 
+                                “The Clean Code”, “The Clean Coder” y “Code Complete”</p>
+                        </div>
+                        <div class="service">
+                            <picture>
+                                <img src="images/aboutmeimages/Diseno_icon.png">
+                            </picture>
+                            <span class="semibold">Diseño de software</span>
+                            <p>Para el diseño, utilizo distintos diagramas UML, tipo 
+                                secuencia, clases, de despliegue, etc.  Diseño software 
+                                utilizando distintos patrones de diseño creacionales, 
+                                estructurales y de comportamiento</p>
+                        </div>
+                        <div class="service">
+                            <picture>
+                                <img src="images/aboutmeimages/BDD_icon.png">
+                            </picture>
+                            <span class="semibold">Diseño de base de datos</span>
+                            <p>He manejado distintos gestores de base de datos tales 
+                                como: MySQL, PostgreSQL y SQL server. Tambien se crear 
+                                diseños entidad-relacion avanzados.</p>
+                        </div>
+                        <div class="service">
+                            <picture>
+                                <img src="images/aboutmeimages/Devops_icon.png">
+                            </picture>
+                            <span class="semibold">DevOps</span>
+                            <p>En cuanto al Developer Operations, tengo experiencia 
+                                manejando el sistema de Ci Jenkins e implementandolo 
+                                con gestionadores de paquetes tales como composer o 
+                                maven, y tambien con analizadores de codigo como SonaQube. 
+                                Tambien se utilizar “Docker” para gestionar contenedores y 
+                                desplegar mis aplicaciones.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <footer class="opensans regular">

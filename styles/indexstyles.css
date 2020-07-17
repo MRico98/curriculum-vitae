@@ -1,0 +1,329 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #F5F5F5;
+}
+
+nav{
+    height: 70px;
+    width: 100%;
+    background-color: white;
+}
+
+nav div{
+    height: 100%;
+    width: 100%;
+    max-width: 1280px;
+    margin: auto;
+    display: flex;
+}
+
+.tool{
+    cursor: pointer;
+    height: 100%;
+    display: inline-block;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .75s;
+}
+
+.tool:hover,.hamburguertool:hover{
+    fill: white;
+    background-color: #346ABB;
+    color:white;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.lora{
+    font-family: 'Lora',serif;
+}
+
+.opensans{
+    font-family: 'Open Sans',sans-serif;
+}
+
+.light{
+    font-weight: 100px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.semibold{
+    font-weight: 600;
+}
+
+.regular{
+    font-weight: 400;
+}
+
+#name{
+    font-size: 64px;
+    height: 122px;
+    max-width: 1280px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: flex-end;
+}
+
+#name span{
+    display: inline-block;
+}
+
+section{
+    margin: auto;
+    max-width: 1280px;
+    width: 100%;
+    justify-content: space-between;
+    height: auto;
+    display: flex;
+    margin-top: 48px;
+    margin-bottom: 104px;
+}
+
+#info{
+    height: 775px;
+    min-width: 320px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+#changesection{
+    width: 876px;
+    border-radius: 16px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+}
+
+footer{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    height: 50px;
+    width: 100%;
+    background-color: #2D2D2D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6A6A6A;
+    font-size: 16px;
+}
+
+#hamburguer{
+    display: none;
+    animation: spin 4s linear infinite;
+}
+
+picture img{
+    width: 100%;
+    height: 100%;
+}
+
+#profilepicture{
+    display: block;
+    height: 266px;
+    width: 320px;
+}
+
+picture + div{
+    height: 434px;
+    width: 100%;
+    display: flex;
+}
+
+#clave{
+    height: 100%;
+    width: 50%;
+}
+
+#valor{
+    width: 50%;
+    height: 100%;
+}
+
+#nombre,#edad,#locacion,#telefono,#niveldeingles,#titulo,#almamater,#trabajoactual{
+    margin-left: 16px;
+}
+
+#nombre,#edad,#locacion,#telefono,#niveldeingles,#nombrevalor,#edadvalor,#locacionvalor,#telefonovalor,#niveldeinglesvalor{
+    height: 39px;
+    width: 147px;
+    display: flex;
+    align-items: flex-end;
+}
+
+#titulo,#titulovalor{
+    width: 147px;
+    height: 60px;
+    display:flex;
+    align-items: center;
+}
+
+#almamater,#trabajoactual,#almamatervalor,#trabajoactualvalor{
+    width: 147px;
+    height: 82px;
+    display:flex;
+    align-items: center;
+}
+
+#pdfdownload{
+    height: 75px;
+    display: flex;
+}
+
+#pdfdownload button{
+    height: 43px;
+    width: 288px;
+    background-color: #E9E9E9;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 0px 0px 0px transparent;
+    border: 0px solid transparent;
+    text-shadow: 0px 0px 0px transparent;
+    color: #346ABB;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.navicon{
+    display: inline-block;
+    height: 29px;
+    width: 24.67px;
+    margin-right: 8px;
+}
+
+.selecttool{
+    color: white;
+    background-color: #346ABB !important; 
+    fill: white;
+}
+
+#pdfimage{
+    width: 18px;
+    height: 22px;
+}
+
+nav + div {
+    display: none;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
+
+.hamburguertool{
+    background-color: white;
+    font-size: 16px;
+    display: block;
+    width: 100%;
+    height: 32px;
+    box-shadow: 0px 0px 0px transparent;
+    border: 0px solid;
+    text-shadow: 0px 0px 0px transparent;
+    cursor: pointer;
+}
+
+#auxiliar{
+    display: none;
+}
+
+.titulossection{
+    min-height: 73px;
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+    border-bottom: 2px solid #C5C5C5;
+}
+
+#changesection .titulossection:first-child{
+    border-radius: 16px 16px 0px 0px;   
+}
+
+.titulossection span{
+    padding-left: 16px;
+}
+
+.titulossection + div{
+    margin: 24px 0px 40px 0px;
+    display: flex;
+    
+}
+
+.titulossection + div p{
+    text-align: justify;
+    max-width: 844px;
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 1110px){
+
+    section{
+        max-width: 1140px;
+    }
+
+    #changesection{
+        width: 730px;
+    }
+}
+
+@media only screen and (max-width: 1110px) and (min-width: 1000px){
+
+    section{
+        max-width: 1025px;
+    }
+
+    #changesection{
+        width: 643px;
+    }
+}
+
+@media only screen and (max-width: 740px){
+    nav div{
+        display: none;
+    }
+
+    nav{
+        height: 40px;
+    }
+
+    #hamburguer{
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #name{
+        justify-content: center;
+        font-size: 48px;
+        text-align: center;
+    }
+
+    section{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #info{
+        max-width: 320px;
+        margin-bottom: 60px;
+    }
+
+    #changesection{
+        width: 95%;
+    }
+}
